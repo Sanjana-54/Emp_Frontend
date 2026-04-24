@@ -2,9 +2,9 @@
 
 function Home() {
   return (
-    <div className='min-h-screen flex flex-col justify-center items-center px-4 text-green-950 text-center'>
-      <h1 className='text-2xl sm:text-4xl md:text-6xl  mb-4'>Employee Management</h1>
-      <p className='text-sm sm:text-lg md:text-2xl max-w-xl'>This website contains all the details of Employees</p>
+    <div className='  text-cyan-800 text-center mt-20 px-4'>
+      <h1 className='text-3xl sm:text-5xl md:text-6xl mb-4 font-bold'>Employee Management</h1>
+      <p className='text-lg sm:text-xl md:text-2xl '>This website contains all the details of Employees</p>
     </div>
   )
 }
