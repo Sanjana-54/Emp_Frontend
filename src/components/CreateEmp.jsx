@@ -52,8 +52,8 @@ const onFormSubmit=async (newEmpObj)=>{
        
  return (
    <div>
-    <h1 className='text-5xl text-cyan-800 font-bold text-center'>Create New Employee</h1>
-    <form  className="max-w-md mx-auto mt-10" onSubmit={handleSubmit(onFormSubmit)} >
+    <h1 className='text-2xl sm:text-3xl md:text-5xl text-cyan-800 font-bold text-center'>Create New Employee</h1>
+    <form  className="max-w-md mx-auto mt-10 px-4" onSubmit={handleSubmit(onFormSubmit)} >
         <div>
             <input type="text" 
             placeholder="Enter name"
@@ -116,7 +116,7 @@ const onFormSubmit=async (newEmpObj)=>{
                
                 {errors.companyName?.type==="required" && <p className='text-red-700'>{errors.companyName.message}</p>}
         </div>
-            <button type="submit" className='p-3 bg-pink-600 mt-3 '>Add Emp</button>
+            <button type="submit" className='p-3 bg-pink-600 mt-3 w-full rounded-xl '>Add Emp</button>
         </form>
    </div>
   );

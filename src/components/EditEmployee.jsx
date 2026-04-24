@@ -35,8 +35,8 @@ const saveModifiedEmp=async (modifiedEmp)=>{
 
   return (
     <div>
-    <h1 className='text-5xl text-cyan-800 font-bold text-center'>Edit Employee</h1>
-    <form  className="max-w-md mx-auto mt-10" onSubmit={handleSubmit(saveModifiedEmp)}>
+    <h1 className='text-2xl sm:text-3xl md:text-5xl text-cyan-800 font-bold text-center'>Edit Employee</h1>
+    <form  className="max-w-md mx-auto mt-10 px-4" onSubmit={handleSubmit(saveModifiedEmp)}>
         <div>
             <input type="text" 
             placeholder="Enter name"
@@ -99,7 +99,7 @@ const saveModifiedEmp=async (modifiedEmp)=>{
                
                 {errors.companyName?.type==="required" && <p className='text-red-700'>{errors.companyName.message}</p>}
         </div>
-            <button type="submit" className=' p-3 bg-green-600 mt-3 text-white'> Save </button>
+            <button type="submit" className=' p-3 bg-green-600 mt-3 text-white w-full rounded-xl'> Save </button>
         </form>
    </div>
   )
